@@ -503,31 +503,52 @@
 				<form class="modal-form">
 					<label class="modal-form-field">
 						<span class="modal-form-input-desc"> Name </span>
-						<input
-							type="text"
-							name="user_name"
-							class="modal-form-input"
-							required
-							pattern="[a-zA-Zа-яА-яіІїЇ]+"
-							minlength="2"
-						/>
+						<span class="modal-form-input-wrapper">
+							<input
+								type="text"
+								name="user_name"
+								class="modal-form-input"
+								required
+								pattern="[a-zA-Zа-яА-яіІїЇ]+"
+								minlength="2"
+							/>
+							<span class="modal-form-input-icon">
+								<svg class="" width="12" height="12">
+									<use href="./images/sprite/icons.svg#name"></use>
+								</svg>
+							</span>
+						</span>
 					</label>
 
 					<label class="modal-form-field">
 						<span class="modal-form-input-desc"> Phone </span>
-						<input
-							type="tel"
-							name="user_phone"
-							class="modal-form-input"
-							required
-							pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-							title="xxx-xxx-xx-xx"
-						/>
+						<span class="modal-form-input-wrapper">
+							<input
+								type="tel"
+								name="user_phone"
+								class="modal-form-input"
+								required
+								pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+								title="xxx-xxx-xx-xx"
+							/>
+							<span class="modal-form-input-icon">
+								<svg class="modal-icon" width="13" height="13">
+									<use href="./images/sprite/icons.svg#phone"></use>
+								</svg>
+							</span>
+						</span>
 					</label>
 
 					<label class="modal-form-field">
 						<span class="modal-form-input-desc"> Email </span>
-						<input type="email" name="user_email" class="modal-form-input" required />
+						<span class="modal-form-input-wrapper">
+							<input type="email" name="user_email" class="modal-form-input" required />
+							<span class="modal-form-input-icon">
+								<svg class="modal-icon" width="15" height="12">
+									<use href="./images/sprite/icons.svg#email"></use>
+								</svg>
+							</span>
+						</span>
 					</label>
 
 					<label class="modal-form-field">
