@@ -743,7 +743,7 @@ button {
     top: 50%;
     left: 50%;
     width: 408px;
-    height: 584px;
+    height: 595px;
     background: var(--madal-window-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -888,4 +888,76 @@ button {
     line-height: 14px;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-form-check-desc::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2E2F42;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+
+}
+
+.modal-form-check:checked+.modal-form-check-desc::before {
+    background-color: #4D5AE5;
+    border-color: #4D5AE5;
+    background-image: url("../images/modal-form/Vectorchecked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-form-check:focus+.modal-form-check-desc::before {
+    outline: 1px solid #2E2F42;
+
+}
+
+.modal-form-check-title {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 24px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.modal-form-submit {
+    width: 169px;
+    height: 56px;
+    align-self: center;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
 }
