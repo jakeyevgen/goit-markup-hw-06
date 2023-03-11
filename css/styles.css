@@ -202,6 +202,11 @@ body {
     top: 42px;
     background: var(--menu-underline);
     border-radius: 2px;
+
+}
+
+.studio-active {
+    color: var(--accent-color);
 }
 
 
@@ -215,6 +220,10 @@ body {
     top: 42px;
     background: var(--menu-underline);
     border-radius: 2px;
+}
+
+.portfolio-active {
+    color: var(--accent-color);
 }
 
 
@@ -534,7 +543,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-font-color);
-    /* padding-right: 850px; */
 }
 
 .footer-color {
@@ -546,7 +554,6 @@ button {
 }
 
 .footer-social-media {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -554,6 +561,70 @@ button {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+}
+
+.footer-link-margin {
+    margin-right: 65px;
+}
+
+.footer-input {
+    width: 255px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footer-color);
+    padding-left: 16px;
+    color: white;
+    margin-right: 23px;
+}
+
+.footer-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+}
+
+.footer-form-submit {
+    display: inline-flex;
+    align-items: center;
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    gap: 16px;
+    background: #4D5AE5;
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-submit:hover,
+.footer-form-submit:focus {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.footer-form-submit::after {
+    content: "";
+    width: 24px;
+    height: 20px;
+    background-size: contain;
+}
+
+.footer-form-submit::after {
+    background-image: url("../images/footer/send.png");
+    background-repeat: no-repeat;
 }
 
 .foooter-flex {
